@@ -1,13 +1,12 @@
 package veterinaria;
 
 public class Mascota {
-    
-    
+
     private String nombre;
     private String especie;
     private int edad;
     private double peso;
-    private Cliente duenio;
+    private Cliente dueno;
 
     public Mascota(String nombre, String especie, int edad, double peso) {
         this.nombre = nombre;
@@ -21,18 +20,17 @@ public class Mascota {
         this.especie = especie;
         this.edad = edad;
         this.peso = peso;
-        this.duenio = duenio;
+        this.dueno = duenio;
     }
 
-    public Cliente getDuenio() {
-        return duenio;
+    public Cliente getDuenoo() {
+        return dueno;
     }
 
-    public void setDuenio(Cliente duenio) {
-        this.duenio = duenio;
+    public void setDuenoo(Cliente duenio) {
+        this.dueno = duenio;
     }
-    
-    
+
     public String getNombre() {
         return nombre;
     }
@@ -65,15 +63,16 @@ public class Mascota {
         this.peso = peso;
     }
 
-      
-    public void mostrarResumen(){
+    public void mostrarResumen() {
         System.out.println("Mascota: " + nombre);
-                System.out.println("Especie: " + especie);
+        System.out.println("Especie: " + especie);
         System.out.println("Edad: " + edad);
-      System.out.printf("Peso: %.2f kg%n", peso);
+        System.out.printf("Peso: %.2f kg%n", peso);
 
-        
+        if (this.dueno != null) {
+            System.out.println("Dueno: " + this.dueno.getNombre());
+        }
+    
+    
     }
-    
-    
 }

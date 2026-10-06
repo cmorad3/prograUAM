@@ -17,7 +17,6 @@ System.out.println("Dueno :" + mascota1.getDuenoo().getIdentificacion());
 
 Veterinario veterinario1 = new Veterinario("v0000", "Medicina general". "Kali"); 
 
-
 Consulta consulta1 = new Consulta(
         "5/10/2026", 
         "Control General", 
